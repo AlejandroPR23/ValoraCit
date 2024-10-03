@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary_color: #eeeaea;
+    --second_color: #b1ec6d;
+    --third_color: #005D02;
+    /* rgba(69, 48, 88, 1) */
+
+    --primary_font: "Poppins", sans-serif;
+    --second_font: "Comfortaa", sans-serif;
+
+    --big_font: 700;
+    --medium_font: 500;
+    --normal_font: 300;
+    --small_font: 100;
+}
+
+
+body{
+    background-color:var(--primary_color);
+    font-family: var(--second_font);
+}
+
+.h1-personal{
+    color: #005D02;
+}
+
+.bg-form{
+    background-color: #b1ec6d;
+    font-family: var(--second_font);
+    color: var(--third_color) !important;
+    box-shadow: 0 2px 4px -1px rgb(0 0 0 / 16%), 0 4px 5px 0 rgb(0 0 0 / 11%), 0 1px 10px 0 rgb(0 0 0 / 10%);
+}
+
+.body-1{
+    background-image: url('../img/ciudad.jpg') ;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    margin: 0; 
+}
+
+.select-universal{
+    width: 280px;
+}
+
+/* Navbar */
+
+
+.navbar-expand-lg {
+    background: var(--second_color);
+    box-shadow: 0 2px 4px -1px rgb(0 0 0 / 16%), 0 4px 5px 0 rgb(0 0 0 / 11%), 0 1px 10px 0 rgb(0 0 0 / 10%);
+}
+
+.nav-link {
+    position: relative;
+    font-family: var(--second_font);
+    color: var(--third_color) !important;
+    text-align: center;
+}
+
+.nav-link::after {
+    content: '';
+    opacity: 0;
+    transition: all 0.2s;
+    height: 2px;
+    width: 100%;
+    background-color: var(--third_color);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.nav-link:hover::after {
+    opacity: 1;
+}
+
